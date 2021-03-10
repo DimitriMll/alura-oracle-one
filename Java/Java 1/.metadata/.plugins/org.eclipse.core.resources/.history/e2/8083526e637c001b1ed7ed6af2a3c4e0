@@ -1,0 +1,13 @@
+// Uma interface é um tipo de contrato onde quem assinar
+ // Tem que implementar os métodos VV
+  // setSenha
+  // autentica
+
+
+public abstract interface Autenticavel {
+
+	public abstract void setSenha(int senha);
+
+	public abstract boolean autentica(int senha);
+	
+}

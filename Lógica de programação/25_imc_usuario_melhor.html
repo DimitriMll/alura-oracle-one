@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br><br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaImc(peso, altura) {
+
+		return peso / (altura * altura);
+	}
+
+	var nome = prompt("Informe o seu nome");
+	var alturaInformada = prompt(nome + ", informe sua altura");
+	var pesoInformado = prompt(nome + ", informe seu peso");
+
+	var imc = calculaImc(pesoInformado, alturaInformada);
+
+	mostra(nome + ", o seu IMC é " + imc);
+
+	if (imc < 18.5 ) {
+
+		mostra("Segundo a OMS, o seu IMC está em um nível muito baixo! Coma mais!");
+	}
+
+	// pra duas condições tem que usar esse && pra adicionar a outra condição dentro do if
+
+	if ( imc >= 18.5 && imc <= 35) {
+
+		mostra("Segundo a OMS, o seu IMC está em um nível aceitável! Parabéns!");
+	}
+
+	if (imc > 35) {
+
+		mostra("Segundo a OMS, o seu IMC está em um nível muito alto! Coma menos!");
+	}
+
+</script>

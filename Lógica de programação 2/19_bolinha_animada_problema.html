@@ -1,0 +1,44 @@
+<canvas width="800" height="600"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 800, 600);
+
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function limpaTela() {
+
+        pincel.clearRect(0, 0, 800, 600);
+    }
+
+    var xAzul = 20; // o importante é que seja declarado fora da função atualizaTela.
+
+    function animaBolaAzul() {
+
+    	if(xAzul<820) {
+
+	        limpaTela();
+	        desenhaCirculo(xAzul, 100, 10, "blue");
+	        xAzul++;
+    	} else {
+
+    		xAzul = 20;
+    	}
+
+    }
+    
+    setInterval(animaBolaAzul, 0.8);
+
+
+    //setInterval recebe dois parâmetros. O primeiro é o nome da função que desejamos que o JavaScript chame em um intervalo de tempo. O segundo parâmetro é esse intervalo de tempo em milissegundos.
+
+</script>

@@ -1,0 +1,25 @@
+
+public class Gerente extends Funcionario {
+
+	private int senha;
+	
+	public void setSenha(int senha) {
+		this.senha = senha;
+	}
+	
+	public boolean autentica(int senha) {
+		if(this.senha == senha) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	
+	
+	public double getBonificacao() {
+		System.out.println("Método de bonificação do Gerente");
+		return super.getSalario(); // diz que o salario é da classe super, classe mãe, classe base
+	} //super.getBonificacao() chama a bonificacao padrao definida la na super class
+		
+}

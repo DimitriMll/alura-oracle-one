@@ -1,0 +1,76 @@
+package br.com.bytebank.banco.teste;
+
+public class TesteString {
+
+	public static void main(String[] args) {
+
+		String nome = "Alura";// object literal
+		// Mesma coisa que
+		// String nome = new String("Alura");
+
+		nome.replace("A", "a");
+		System.out.println("nome.replace(\"A\", \"a\"); ");
+		System.out.println(nome);
+		System.out.println();
+		// Aqui notamos que a String é imutável, quando criamos uma String ela nasce e
+		// morre sem poder sofrer qualquer alteração
+
+		String outra = nome.replace("A", "a");
+		System.out.println("String outra = nome.replace(\"A\", \"a\");");
+		System.out.println(outra);
+		System.out.println();
+		// Agora que criamos uma nova String, ela já nasce alterada, trazendo a
+		// alteração e nunca mais a perdendo
+
+		outra.replace("a", "A");
+		System.out.println("outra.replace(\"a\", \"A\");");
+		System.out.println(outra);
+		System.out.println();
+		// Assim funciona
+		
+		String maisUma = nome.toLowerCase();
+		System.out.println("String maisUma = nome.toLowerCase();");
+		System.out.println(maisUma);
+		System.out.println();
+		// Outra maneira de fazer
+		
+		String maisUma2 = nome.toUpperCase();
+		System.out.println("String maisUma = nome.toUpperCase();");
+		System.out.println(maisUma2);
+		System.out.println();
+		// Outra maneira de fazer
+		
+		String outra2 = nome.replace("Al", "MAL");
+		System.out.println("String outra2 = nome.replace(\"Al\", \"MAL\");");
+		System.out.println(outra2);
+		System.out.println();
+		// Outro método
+		
+		char c = 'A';
+		char d = 'a';
+		
+		String outra3 = nome.replace(c, d);
+		System.out.println("String outra3 = nome.replace(c, d);");
+		System.out.println(outra3);
+		System.out.println();
+		// Outro método
+		
+		
+		char f = nome.charAt(2);
+		System.out.println("Mostra o caractér na posição indicada");
+		System.out.println(f);
+		System.out.println();
+		// Mostra o caractér na posição indicada
+		
+		
+		System.out.println("Retorna a posição do caracter indicado");
+		System.out.println(nome.indexOf("u"));
+		System.out.println();
+		
+		
+		System.out.println("Retorna a substring a partir da posição indicada");
+		System.out.println(nome.substring(1));
+		System.out.println();
+		
+	}
+}

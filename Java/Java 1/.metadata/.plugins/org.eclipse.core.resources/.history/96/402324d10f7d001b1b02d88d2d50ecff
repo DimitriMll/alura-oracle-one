@@ -1,0 +1,17 @@
+package br.com.bytebank.banco.modelo;
+
+/**
+ * A class SeguroDeVida é uma classe que é ligada à classe Tributável.
+ * 
+ * @author Dimitri Muller
+ *
+ */
+
+public class SeguroDeVida implements Tributavel {
+
+	@Override
+	public double getValorImposto() {
+		return 42;
+	}
+
+}

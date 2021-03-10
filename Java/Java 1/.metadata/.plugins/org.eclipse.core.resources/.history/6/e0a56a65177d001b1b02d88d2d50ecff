@@ -1,0 +1,30 @@
+package br.com.bytebank.banco.teste;
+
+public class TesteString {
+
+	public static void main(String[] args) {
+
+		String nome = "Alura";// object literal
+		// Mesma coisa que
+		// String nome = new String("Alura");
+
+		nome.replace("A", "a");
+		System.out.println("nome.replace(\"A\", \"a\"); ");
+		System.out.println(nome);
+		System.out.println();
+		// Aqui notamos que a String é imutável, quando criamos uma String ela nasce e
+		// morre sem poder sofrer qualquer alteração
+
+		String outra = nome.replace("A", "a");
+		System.out.println(outra);
+		// Agora que criamos uma nova String, ela já nasce alterada, trazendo a
+		// alteração e nunca mais a perdendo
+
+		outra.replace("a", "A");
+		System.out.println(outra);
+		
+		String maisUma = nome.toLowerCase();
+		System.out.println(maisUma);
+		
+	}
+}

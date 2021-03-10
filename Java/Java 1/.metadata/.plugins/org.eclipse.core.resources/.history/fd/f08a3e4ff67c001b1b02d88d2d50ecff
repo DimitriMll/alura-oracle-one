@@ -1,0 +1,11 @@
+
+public class TestaClassTestComChecked {
+
+	public static void main(String[] args) {
+		
+		ClassTest c = new ClassTest();
+		c.deposita();
+		
+	}
+	
+}

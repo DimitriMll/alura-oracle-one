@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br><br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var n = 10
+
+	function sorteia(n) {
+		return (Math.round(Math.random() * n))
+	}
+
+	
+	var numeroPensado = sorteia (n)
+
+	var tentativas = 1;
+
+	while (tentativas <= 3) {
+
+		var chute = parseInt (prompt("Chute um número de 0 a " + n + "!"));
+
+		if (chute == numeroPensado) {
+
+			mostra("Você acertou!");
+		} 
+	 		else {
+
+				mostra("Você errou!");
+			}
+
+		if (chute < numeroPensado) {
+
+			mostra("O número chutado é menor!");
+		}
+
+		if (chute > numeroPensado) {
+
+			mostra ("O número chutado é maior!");
+		}
+		tentativas ++;
+	}
+
+	mostra ("FIM!");
+
+</script>

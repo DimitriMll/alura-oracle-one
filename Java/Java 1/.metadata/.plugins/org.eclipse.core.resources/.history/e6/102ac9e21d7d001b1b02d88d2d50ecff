@@ -1,0 +1,21 @@
+package br.com.bytebank.banco.modelo;
+
+/**
+ * A class ContaPoupanca represente um tipo de conta, com suas particularidades.
+ * 
+ * @author Dimitri Muller
+ *
+ */
+
+public class ContaPoupanca extends Conta {
+
+	public ContaPoupanca(int agencia, int numero) {
+		super(agencia, numero);
+	}
+
+	@Override
+	public void deposita(double valor) {
+		super.saldo += valor;
+	}
+
+}

@@ -1,0 +1,15 @@
+package br.com.bytebank.banco.modelo;
+
+/**
+ * A interface Tributável, é uma interface para cálculo de impostos.
+ * 
+ * @author Dimitri Muller
+ *
+ */
+
+public interface Tributavel {
+
+	public abstract double getValorImposto();
+	//não precisa colocar public abstract pq é implícito
+	
+}

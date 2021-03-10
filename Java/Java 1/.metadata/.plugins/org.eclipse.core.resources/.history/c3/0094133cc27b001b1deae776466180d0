@@ -1,0 +1,11 @@
+
+public class TestaContaSemCliente {
+
+	public static void main(String[] args) {
+		Conta contaDaMarcela = new Conta(); //Criamos a conta com os atributos dela
+		System.out.println(contaDaMarcela.saldo);
+		contaDaMarcela.titular = new Cliente();//Adicionamos um Cliente à conta
+		
+		
+	}
+}

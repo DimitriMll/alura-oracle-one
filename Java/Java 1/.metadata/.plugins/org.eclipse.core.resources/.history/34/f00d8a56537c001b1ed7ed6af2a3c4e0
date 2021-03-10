@@ -1,0 +1,10 @@
+
+public class Designer extends Funcionario {
+
+	public double getBonificacao() {
+		System.out.println("Método de bonificação do Editor de Vídeo!");
+		return 200; // diz que o salario é da classe super, classe mãe, classe
+															// base
+	} // super.getBonificacao() chama a bonificacao padrao definida la na super class
+
+}

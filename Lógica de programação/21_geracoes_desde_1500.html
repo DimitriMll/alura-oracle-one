@@ -1,0 +1,49 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write ("<br>");
+	}
+
+	function mostra(texto) {
+
+		document.write (texto);
+		pulaLinha();
+	}
+
+	function geracoes() {
+
+		document.write (Math.round((2020 - 1500)/28));
+	}
+
+	mostra ("O número de gerações desde 1500 até hoje é: ") + geracoes();
+
+</script>
+
+<br><br><br>
+
+OU
+
+<br><br><br>
+
+<meta charset="UTF-8">
+
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var idadeMediaQuandoTemFilhos = 28;
+        var anoAtual = 2020; 
+
+        var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+
+        mostra(quantidadeDeGeracoes);
+    </script>

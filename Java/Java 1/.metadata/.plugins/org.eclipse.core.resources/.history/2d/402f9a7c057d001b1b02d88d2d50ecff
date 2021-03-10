@@ -1,0 +1,34 @@
+
+public class TesteConexao {
+
+	public static void main(String[] args) {
+		
+		
+		try(Conexao conexao = new Conexao()){
+			
+		}
+		
+		
+		
+		
+//----------------------------------------------		
+		
+//		Conexao con = null;
+//		try {
+//			con = new Conexao();
+//			con.leDados();
+//		}catch(IllegalStateException ex) {
+//			System.out.println("Deu erro na conexão!");
+//		}finally {
+//			con.close();
+//		}
+		
+	}
+
+}
+
+
+
+// O finally no fim sempre realiza a ação entre {} 
+// independente de acontecer ou não o erro!!!
+// try apenas com finally é válido também, sem catch

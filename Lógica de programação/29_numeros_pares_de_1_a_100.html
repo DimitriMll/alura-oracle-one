@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br><br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	mostra("O primeiro número par é 2!");
+
+	var numeroPar = 4;
+
+	while(numeroPar <= 100) {
+
+		mostra("O próximo número par é " + numeroPar + "!");
+		numeroPar = numeroPar + 2;
+	}
+
+
+	mostra("FIM");
+
+</script>
+
+
+<br><br> GABARITO: <br><br>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var contador = 2;
+    while(contador <= 100) {
+        mostra(contador);
+        contador = contador + 2; // incrementa de dois em dois
+    }
+    mostra("FIM");
+</script>

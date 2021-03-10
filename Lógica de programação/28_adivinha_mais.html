@@ -1,0 +1,35 @@
+<meta charset="UTF-8" />
+
+<input />
+<button>Compare com o meu segredo</button>
+
+<script>
+  var segredos = [5, 7, 10, 2, 3];
+  var input = document.querySelector("input");
+  input.focus();
+  //input.value
+
+  function verifica() {
+    var achou = false;
+    for (var posicao = 0; posicao < segredos.length; posicao++) {
+      if (input.value == segredos[posicao]) {
+        alert("Você Acertou!");
+        achou = true;
+        break;
+      }
+    }
+
+    if (achou == false) {
+      alert("Você errou!");
+    }
+
+    input.value = "";
+    input.focus();
+  }
+
+  var button = document.querySelector("button");
+  button.onclick = verifica;
+
+  //o verifica não terá os (), assim a função
+  // ficará armazenada no onclick
+</script>

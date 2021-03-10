@@ -1,0 +1,7 @@
+package modelo;
+public interface Tributavel {
+
+	public abstract double getValorImposto();
+	//não precisa colocar public abstract pq é implícito
+	
+}

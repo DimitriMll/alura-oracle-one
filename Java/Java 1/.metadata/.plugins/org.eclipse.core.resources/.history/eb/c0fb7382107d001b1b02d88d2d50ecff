@@ -1,0 +1,16 @@
+package br.com.bytebank.banco.modelo;
+
+/**
+ * A class SaldoInsuficienteException representa uma exceção que devolve uma mensagem de erro caso o saldo seja insuficiente para uma transação.
+ * 
+ * @author Dimitri Muller
+ *
+ */
+
+public class SaldoInsuficienteException extends Exception {
+	
+	public SaldoInsuficienteException(String msg) {
+		super(msg);
+	}
+
+}

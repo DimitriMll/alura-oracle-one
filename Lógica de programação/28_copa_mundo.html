@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br><br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var anoInicial = parseInt(prompt("Este programa mostra todos os anos em que copas existiram entre as datas que você informar!! Entre com a data inicial:"));
+
+	var anoFinal = parseInt(prompt("Entre com a data final:"));
+
+	//while (true)
+	//repete (enquanto isso for verdadeiro)
+
+	while(anoInicial<=anoFinal) {
+
+	mostra("Teve copa em " + anoInicial);
+	anoInicial = anoInicial + 4;
+	}
+
+	mostra("FIM");
+
+</script>

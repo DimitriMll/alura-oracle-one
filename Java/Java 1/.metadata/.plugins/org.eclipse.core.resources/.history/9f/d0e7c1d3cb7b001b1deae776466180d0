@@ -1,0 +1,10 @@
+
+public class TestaValores {
+
+	public static void main(String[] args) {
+		Conta conta = new Conta(1337, 2456);//O problema é que a conta nasce com valor = 0 :(
+		
+		conta.setAgencia(-550);
+		conta.setNumero(-2051478);
+	}
+}

@@ -1,0 +1,16 @@
+
+public class TestaSomaGauss {
+
+	public static void main(String[] args) {
+		
+		int contador = 0;
+		int total = 0;
+		while(contador <= 10) {
+	
+			total = total + contador; //total += contador;
+			System.out.println(total);
+			contador ++;
+		}
+		//System.out.println(total); se quiser imprimir só o resultado total
+	}
+}

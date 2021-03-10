@@ -1,0 +1,23 @@
+package br.com.bytebank.banco.especial;
+
+import br.com.bytebank.banco.modelo.Conta;
+
+/**
+ * A class ContaEspecial representa uma conta onde podemos ver as referências sobre private, public, package private e protected
+ * 
+ * @author Dimitri Muller
+ *
+ */
+
+public class ContaEspecial extends Conta {
+	
+	public ContaEspecial(int agencia, int numero) {
+		super(agencia, numero);		
+	}
+
+	@Override
+	public void deposita(double valor) {
+		super.saldo =+ valor;
+	}
+
+}

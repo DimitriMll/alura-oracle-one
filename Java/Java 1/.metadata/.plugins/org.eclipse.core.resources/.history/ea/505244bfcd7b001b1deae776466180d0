@@ -1,0 +1,14 @@
+
+public class TestaValores {
+
+	public static void main(String[] args) {
+		
+		Conta conta = new Conta(1337, 2456);//O problema é que a conta nasce com valor = 0 :(
+		System.out.println("Essa conta foi criada na agência: " + conta.getAgencia());
+		
+		Conta conta2 = new Conta(1337, 2547);
+		System.out.println("Essa conta foi criada na agência: " + conta2.getAgencia());
+		
+		System.out.println();
+	}
+}
