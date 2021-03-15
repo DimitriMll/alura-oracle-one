@@ -1,7 +1,7 @@
-# Oracle Next Education - Alura
+# 💻 Oracle Next Education - Alura
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/DimitriMll/alura-oracle-one/blob/main/LICENSE) 
 
-# Sobre o projeto
+# ***</>*** Sobre o projeto
 
 https://www.oracle.com/br/education/oracle-next-education/
 
@@ -15,14 +15,14 @@ O projeto tem a parceria da **Alura** a maior plataforma brasileira de cursos de
 
 São **29 CURSOS** com uma carga horária estimada em **340h**.
 
-# Tecnologias estudadas
+# 🚀 Tecnologias estudadas
 
 - JavaScript
 - HTML 
 - CSS
 - Java
 
-# Aluno
+# 🎒 Aluno
 Dimitri Rangel Müller
 
 https://www.linkedin.com/in/dimitri-m%C3%BCller-800115a7/
